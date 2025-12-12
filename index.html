@@ -2,13 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/Asset 1.svg" />
-    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="/public/Asset.svg" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>todesktop</title>
+    <title>ToDesktop</title>
   </head>
   <body>
-    
+    <main>
+      <!-- Navbar -->
+      <nav>
+        <div class="p-2 flex bg-gray-100 justify-between items-center">
+          <a class="flex gap-1 items-center" href="#" id="brand">
+            <img class="object-cover w-12 h-12" src="/public/Asset.svg" alt="Brand logo">
+            <span class="text-lg font-medium font-pop"><span class="text-indigo-700">To</span>Desktop</span>
+          </a>
+          <div class="hidden  md:flex gap-12" id="nav-menu">
+            <a class="font-medium px-1.5 py-0.5 text-gray-900 hover:font-bold hover:text-indigo-700" href="#">Pricing</a>
+            <a class="font-medium px-1.5 py-0.5 text-gray-900 hover:font-bold hover:text-indigo-700" href="#">Docs</a>
+            <a class="font-medium px-1.5 py-0.5 text-gray-900 hover:font-bold hover:text-indigo-700" href="#">Changelog</a>
+            <a class="font-medium px-1.5 py-0.5 text-gray-900 hover:font-bold hover:text-indigo-700" href="#">Blogs</a>
+            <a class="font-medium px-1.5 py-0.5 text-gray-900 hover:font-bold hover:text-white hover:bg-indigo-700 hover:rounded-md hover:shadow-indigo-500/50" href="#">Login</a>
+          </div>
+          <button class="hidden md:flex items-center gap-1.5 border p-1.5 hover:border hover:p-1.5 hover:bg-gray-300">
+            <img class="w-8 h-8" src="assets/svg/logo-electron.svg" alt="electron">
+            <span class="font-medium hover:font-bold">Electron Developers</span>
+            <img class="w-6 h-6 " src="assets/svg/arrow-forward-outline.svg" alt="arrow">
+          </button>
+          <button class="p-1 md:hidden" onclick="handleMenu()">
+            <img class="w-10 h-10" src="assets/svg/icons8-menu.svg" alt="menu">
+          </button>
+        </div>
+      </nav>
+    </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="module" src="/src/main.js"></script>
