@@ -7,50 +7,42 @@
         <link rel="stylesheet" href="/src/style.css">
         <title>Login</title>
     </head>
-    <body>
-        <main>
-            <section class="bg-white m-32 md:mx-140  text-base font-medium">
-                <div class="flex justify-center">
-                    <img class=" size-20 text-center" src="/public/Asset.svg" alt="brand logo">
-                </div>
-                <h2 class="text-3xl text-center">Welcome back</h2>
-                <form>
-                    <div class=" md:container mx-auto flex justify-center items-center flex-col mt-3 bg-gray-100 m-120 p-5 rounded-lg">
+        <body class="bg-gray-100 h-screen">
+            <main class="h-screen flex items-center justify-center">
+                <section class="bg-white w-full max-w-md p-8 rounded-lg shadow-md">
+                    <div class="flex justify-center mb-4">
+                        <img class="w-20" src="/public/Asset.svg" alt="brand logo">
+                    </div>
+                    <h2 class="text-3xl text-center mb-4">Welcome back</h2>
+                    <form class="flex flex-col items-center gap-3">
                         <div class="px-5">
-                            <div>
-                                <label class="ml-4" for="email">Email</label>
-                            </div>
-                            <input class="bg-white p-1.5 m-1.5 shadow-md rounded-md w-64 border hover:border-2 hover:border-b-gray-900 "  id="email" type="email" placeholder="Email" required>
+                            <label class="ml-1 block" for="email">Email</label>
+                            <input class="bg-white p-2 w-64 shadow-md rounded-md border hover:border-2 hover:border-gray-900" id="email" type="email" placeholder="Email" required>
                         </div>
-                        <div class="p-1.5">
-                            <div>
-                                <label class="ml-4" for="pass">Password</label>
-                            </div>
-                            <input class="bg-white p-1.5 m-1.5 shadow-md rounded-md w-64 border hover:border-2 hover:border-b-gray-600"  id="pass" type="password" placeholder="password" required>
+                        <div class=" px-5">
+                            <label class="ml-1 block" for="pass">Password</label>
+                            <input class="bg-white p-2 w-64 shadow-md rounded-md border hover:border-2 hover:border-gray-600" id="pass" type="password" placeholder="password" required>
                         </div>
-                        <div class="bg-black w-64 text-center p-1.5 m-1.5 border rounded-md hover:bg-gray-800 mb-4">
-                            <button class="text-white" type="submit">Login</button>
-                        </div>
-                        <!-- GOOGLE -->
-                        <div class="w-64 text-center p-1.5 m-1.5 border rounded-md hover:bg-gray-300">
-                            <a href="http://www.google.com" target="_blank"><button class="" type="button"><img class="inline-block size-6 mr-3 pb-0.5 " src="/assets/images/google-icon.svg" alt="google">Google</button></a>
-                        </div>
-                        <!-- FACEBOOK -->
-                        <div class="w-64 text-center p-1.5 m-1.5 border rounded-md hover:bg-gray-300">
-                            <a href="https://www.facebook.com/mdjayed.gazi" target="_blank"><button class="" type="button"><img class="inline-block size-6 mr-3 pb-0.5 " src="/assets/images/facebook-icon.svg" alt="google">Facebook</button></a>
-                        </div>
-                        <!-- GITHUB -->
-                        <div class="w-64 text-center p-1.5 m-1.5 border rounded-md hover:bg-gray-300">
-                            <a href="https://github.com/mdjayedgazi" target="_blank"><button class="" type="button"><img class="inline-block size-6 mr-3 pb-0.5 " src="/assets/images/github-icon.svg" alt="google">Github</button></a>
-                        </div>
-                        <div class="text-muted-foreground flex justify-center gap-1 text-sm">
+                        <button class="bg-black text-white w-64 p-2 rounded-md hover:bg-gray-800" type="submit">Login</button>
+                        
+                        <!-- SOCIAL BUTTONS -->
+                        <a href="http://www.google.com" target="_blank" class="w-64 p-2 border rounded-md flex items-center justify-center gap-2 hover:bg-gray-300">
+                            <img class="w-6" src="/assets/images/google-icon.svg" alt="google"> Google
+                        </a>
+                        <a href="https://www.facebook.com/mdjayed.gazi" target="_blank" class="w-64 p-2 border rounded-md flex items-center justify-center gap-2 hover:bg-gray-300">
+                            <img class="w-6" src="/assets/images/facebook-icon.svg" alt="facebook"> Facebook
+                        </a>
+                        <a href="https://github.com/mdjayedgazi" target="_blank" class="w-64 p-2 border rounded-md flex items-center justify-center gap-2 hover:bg-gray-300">
+                            <img class="w-6" src="/assets/images/github-icon.svg" alt="github"> Github
+                        </a>
+                        
+                        <div class="text-sm flex justify-center gap-1 mt-2">
                             <p>Need an account?</p>
                             <a href="#" class="text-primary font-medium hover:underline hover:font-bold">Sign up</a>
                         </div>
-                    </div>
-                </form>
-            </section>
-        </main>
+                    </form>
+                </section>
+            </main>
         <script type="module" src="/src/main.js"></script>
     </body>
 </html>
