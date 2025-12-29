@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/svg+xml" href="/public/Asset.svg"/>
+        <link rel="stylesheet" href="/src/style.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <main>
+            <section class="bg-white m-32 md:mx-140  text-base font-medium">
+                <div class="flex justify-center">
+                    <img class=" size-20 text-center" src="/public/Asset.svg" alt="brand logo">
+                </div>
+                <h2 class="text-3xl text-center">Welcome back</h2>
+                <form>
+                    <div class=" md:container mx-auto flex justify-center items-center flex-col mt-3 bg-gray-100 m-120 p-5 rounded-lg">
+                        <div class="px-5">
+                            <div>
+                                <label class="ml-4" for="email">Email</label>
+                            </div>
+                            <input class="bg-white p-1.5 m-1.5 shadow-md rounded-md w-64 border hover:border-2 hover:border-b-gray-900 "  id="email" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="p-1.5">
+                            <div>
+                                <label class="ml-4" for="pass">Password</label>
+                            </div>
+                            <input class="bg-white p-1.5 m-1.5 shadow-md rounded-md w-64 border hover:border-2 hover:border-b-gray-600"  id="pass" type="password" placeholder="password" required>
+                        </div>
+                        <div class="bg-black w-64 text-center p-1.5 m-1.5 border rounded-md hover:bg-gray-800 mb-4">
+                            <button class="text-white" type="submit">Login</button>
+                        </div>
+                        <!-- GOOGLE -->
+                        <div class="w-64 text-center p-1.5 m-1.5 border rounded-md hover:bg-gray-300">
+                            <a href="http://www.google.com" target="_blank"><button class="" type="button"><img class="inline-block size-6 mr-3 pb-0.5 " src="/assets/images/google-icon.svg" alt="google">Google</button></a>
+                        </div>
+                        <!-- FACEBOOK -->
+                        <div class="w-64 text-center p-1.5 m-1.5 border rounded-md hover:bg-gray-300">
+                            <a href="https://www.facebook.com/mdjayed.gazi" target="_blank"><button class="" type="button"><img class="inline-block size-6 mr-3 pb-0.5 " src="/assets/images/facebook-icon.svg" alt="google">Facebook</button></a>
+                        </div>
+                        <!-- GITHUB -->
+                        <div class="w-64 text-center p-1.5 m-1.5 border rounded-md hover:bg-gray-300">
+                            <a href="https://github.com/mdjayedgazi" target="_blank"><button class="" type="button"><img class="inline-block size-6 mr-3 pb-0.5 " src="/assets/images/github-icon.svg" alt="google">Github</button></a>
+                        </div>
+                        <div class="text-muted-foreground flex justify-center gap-1 text-sm">
+                            <p>Need an account?</p>
+                            <a href="#" class="text-primary font-medium hover:underline hover:font-bold">Sign up</a>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>

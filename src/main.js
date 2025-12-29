@@ -1,5 +1,6 @@
 import './style.css'
 
+const navDialog = document.getElementById('nav-dialog');
 globalThis.handleMenu = function () {
-    console.log('mj')
+    navDialog.classList.toggle('hidden');
 }

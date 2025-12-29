@@ -14,24 +14,37 @@
         <div class="p-2 flex bg-gray-100 justify-between items-center">
           <a class="flex gap-1 items-center" href="#" id="brand">
             <img class="object-cover w-12 h-12" src="/public/Asset.svg" alt="Brand logo">
-            <span class="text-lg font-medium font-pop"><span class="text-indigo-700">To</span>Desktop</span>
+            <span class="text-lg font-medium font-pop"><span class="text-indigo-700 text-3xl">To</span>Desktop</span>
           </a>
           <div class="hidden  md:flex gap-12" id="nav-menu">
             <a class="font-medium px-1.5 py-0.5 text-gray-900 hover:font-bold hover:text-indigo-700" href="#">Pricing</a>
             <a class="font-medium px-1.5 py-0.5 text-gray-900 hover:font-bold hover:text-indigo-700" href="#">Docs</a>
             <a class="font-medium px-1.5 py-0.5 text-gray-900 hover:font-bold hover:text-indigo-700" href="#">Changelog</a>
             <a class="font-medium px-1.5 py-0.5 text-gray-900 hover:font-bold hover:text-indigo-700" href="#">Blogs</a>
-            <a class="font-medium px-1.5 py-0.5 text-gray-900 hover:font-bold hover:text-white hover:bg-indigo-700 hover:rounded-md hover:shadow-indigo-500/50" href="#">Login</a>
+            <a class="font-medium px-1.5 py-0.5 text-gray-900 hover:font-bold hover:text-white hover:bg-indigo-700 hover:rounded-md hover:shadow-indigo-500/50" href="/pages/login.html">Login</a>
           </div>
-          <button class="hidden md:flex items-center gap-1.5 border p-1.5 hover:border hover:p-1.5 hover:bg-gray-300">
-            <img class="w-8 h-8" src="assets/svg/logo-electron.svg" alt="electron">
-            <span class="font-medium hover:font-bold">Electron Developers</span>
-            <img class="w-6 h-6 " src="assets/svg/arrow-forward-outline.svg" alt="arrow">
+          <button class="hidden md:flex items-center gap-1.5 text-lg border rounded-lg p-1.5 hover:border hover:p-1.5 hover:bg-gray-300">
+            <ion-icon name="logo-electron"></ion-icon>
+            <span class="font-medium">Electron Developers</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
           </button>
-          <button class="p-1 md:hidden" onclick="handleMenu()">
-            <img class="w-10 h-10" src="assets/svg/icons8-menu.svg" alt="menu">
+          <button class="p-1 md:hidden text-4xl" onclick="handleMenu()">
+            <ion-icon name="menu-outline"></ion-icon>
           </button>
         </div>
+        
+        <div id="nav-dialog" class="fixed bg-white inset-0 p-2">
+          <div class="flex justify-between" id="nav-bar">
+            <a class="flex gap-1 items-center" href="#" id="brands">
+              <img class="object-cover w-12 h-12" src="/public/Asset.svg" alt="Brand logo">
+              <span class="text-lg font-medium font-pop"><span class="text-indigo-700 text-3xl">To</span>Desktop</span>
+            </a>
+            <button class="p-1 md:hidden text-3xl" onclick="handleMenu()">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+        
       </nav>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
